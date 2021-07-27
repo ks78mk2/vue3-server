@@ -1,0 +1,21 @@
+{
+    "mode" : "product",
+    "develop": {
+        "SecureOnOff": false,
+        "port": 8080,
+        "apiVersion": "v1",
+        "db": {
+            "host": "127.0.0.1",
+            "port": 3306
+        }
+    },
+    "product": {
+        "SecureOnOff": true,
+        "port": 8080,
+        "apiVersion": "v1",
+        "db": {
+            "host": "127.0.0.1",
+            "port": 3306
+        }
+    }
+}
