@@ -1,0 +1,20 @@
+{
+    "secret" : "test",
+    "common": {
+        "maxSigninTrycount": 5,
+        "passwordValidPeriodDay": 90,
+        "resetTokenExpireTime": 3
+    },
+    "table": {
+        "/api/v1/users": "TB_ADMIN",
+        "/api/v1/departments": "TB_DEPT_DEPTH",
+        "/api/v1/reports": "TB_TERMINAL_IMAGE_TRANS",
+        "/api/v1/controls": "TB_CONTROL",
+        "/api/v1/onlines" : "TB_SVC_BOARD",
+        "/api/v1/commons" : "TB_COMMON",
+        "/api/v1/subscriptions" : "TB_SUBSCRIPTION",
+        "/api/v1/qnas" : "TB_QNA_HISTORY",
+        "/api/v1/pcview" : "TB_BOOKMARK_LIST",
+        "/api/v1/analyze" : "TB_ANALYZE_SERVICE"
+    }
+}
