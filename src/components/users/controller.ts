@@ -78,13 +78,4 @@ export default class Controller extends InterfaceController{
       this.response.json(result);
     }
   }
-
-  public getLiveviewUser = async () => {
-    const { result, error }: any = await this.service.getLiveviewUser();
-    if (error) {
-      this.response.status(error.statusCode).json({ RESULT_MESSAGE: error.message , RESULT_CODE: error.code });
-    } else {
-      this.response.json(result);
-    }
-  }
 }

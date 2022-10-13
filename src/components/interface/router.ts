@@ -13,7 +13,7 @@ export default class CommonRouter {
             await controller.init();
             controller[functionName].call();
         } catch (error) {
-            let restApi = ["/pcview", "/commons/uploadfile", "/commons/logo"];
+            let restApi = ["/commons/uploadfile", "/commons/logo"];
             let restApiFlag : boolean = false;
             for (let item of restApi){
                 if (request.originalUrl.indexOf(item) > -1) {

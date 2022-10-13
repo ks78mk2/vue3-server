@@ -1,5 +1,5 @@
 {
-    "mode" : "product",
+    "mode" : "develop",
     "develop": {
         "SecureOnOff": false,
         "port": 8080,

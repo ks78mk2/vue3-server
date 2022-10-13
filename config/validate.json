@@ -2,65 +2,18 @@
     "POST": {
         "/api/v1/users/signin": ["admin_id", "admin_pw"],
         "/api/v1/users/pass/check": ["admin_id", "admin_pw"],
-        "/api/v1/users/user": ["admin_id", "admin_pw", "admin_nm"],
-        "/api/v1/departments/codeone": ["code_01_nm"],
-        "/api/v1/departments/codetwo": ["code_02_nm", "p_code"],
-        "/api/v1/subscriptions/subscription" : ["code_01_nm", "code_02_nm", "admin_nm", "admin_id", "admin_nm_sub", "admin_id_sub", "admin_cnt"],
-        "/api/v1/controls/channel" : ["code_01", "code_02", "ctl_nm", "admin_id", "admin_nm", "admin_id_sub", "admin_nm_sub", "start_time", "total_student", "test_duration", "test_notice"],
-        "/api/v1/qnas/qna" : ["identifier", "name", "mobile_num", "company", "contents"],
-        "/api/v1/commons/uploadfile" : ["device_id", "step"],
-        "/api/v1/pcview/bookmarkadd" : ["p_cust_ctn", "p_insert_date", "admin_id", "bookmark_pos", "bookmark_type"],
-        "/api/v1/choice/view" : ["cust_ctn", "insert_date", "dev_key"]
-        
+        "/api/v1/users/user": ["admin_id", "admin_pw", "admin_nm"]        
     },
     "PUT": {
-        "/api/v1/controls/channel" : ["seq"],
-        "/api/v1/subscriptions/subscription" : ["admin_id", "insert_date"],
-        "/api/v1/users/user" : ["admin_id"],
-        "/api/v1/pcview/bookmarkdel" : ["p_cust_ctn", "p_insert_date", "admin_id", "bookmark_pos", "bookmark_type"],
-        "/api/v1/analyze" : ["cust_ctn", "code_id"]
+        "/api/v1/users/user" : ["admin_id"]
     },
     "GET": {
         "/api/v1/users/check": ["admin_id"],
         "/api/v1/users/email/exist": ["admin_id"],
         "/api/v1/users/pass/init": ["admin_id"],
-        "/api/v1/users/list": ["code_01", "code_02"],
-        "/api/v1/users/liveview/user": ["admin_id"],
-        "/api/v1/departments/codetwo": ["p_code"],
-        "/api/v1/departments/dupl/codename" : ["code_01_nm", "code_02_nm"],
-        "/api/v1/reports/list": ["code_id", "cust_nm", "admin_id", "sys_passfail", "user_passfail", "check_type"],
-        "/api/v1/reports/excel/analyze": ["code_id"],
-        "/api/v1/reports/excel/student": ["code_id", "cust_nm", "admin_id", "sys_passfail", "user_passfail", "check_type"],
-        "/api/v1/analyze/status": ["cust_ctn", "code_id"],
-        "/api/v1/reports/download/media": ["code_id"],
-        "/api/v1/analyze/count": ["code_id"],
-        "/api/v1/analyze/list": ["code_id"],
-        "/api/v1/onlines/list": ["code_id"],
-        "/api/v1/controls/online/channel": ["admin_id"],
-        "/api/v1/controls/online/channel/info": ["code_id"],
-        "/api/v1/controls/report/channel": [ "admin_id"], 
-        "/api/v1/controls/list": ["admin_id" , "code_01", "code_02", "code_id", "admin_nm"],
-        "/api/v1/controls/count": ["admin_id", "code_01", "code_02", "code_id", "admin_nm"],
-        "/api/v1/controls/dupl/starttime" : ["start_time", "test_duration", "admin_id"],
-        "/api/v1/controls/dupl/code" : ["code_id"],
-        "/api/v1/commons/thumb": ["img"],
-        "/api/v1/commons/logo": ["school_key"],
-        "/api/v1/commons/thumb/download": ["img"],
-        "/api/v1/commons/app/download": ["type"],
-        "/api/v1/commons/download": ["insert_date", "cust_ctn"],
-        "/api/v1/commons/sendmail": ["from", "to", "html", "type", "subject"],
-        "/api/v1/subscriptions/count": ["admin_id", "code_01_nm", "code_02_nm"],
-        "/api/v1/subscriptions/list": ["admin_id", "code_01_nm", "code_02_nm", "offset"],
-        "/api/v1/subscriptions/admin": ["code_01", "code_02"],
-        "/api/v1/qnas/list" : ["start_date", "end_date", "identifier", "name", "mobile_num", "company", "offset"],
-        "/api/v1/qnas/count" : ["start_date", "end_date", "identifier", "name", "mobile_num", "company"],
-        "/api/v1/pcview/bookmarklist" : ["p_cust_ctn", "p_insert_date", "admin_id"]
+        "/api/v1/users/list": ["code_01", "code_02"]
     },
     "DELETE": {
-        "/api/v1/controls/channel" : ["seq"],
-        "/api/v1/subscriptions/subscription" : ["admin_id", "insert_date"],
-        "/api/v1/onlines/online" : ["code_id"],
-        "/api/v1/qnas/qna" : ["qno"],
         "/api/v1/users/user" : ["admin_id"]
     }
 }

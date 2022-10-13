@@ -23,11 +23,4 @@ export default class DataAccessLayer extends InterfaceDAL{
     const result: any = await this.database.query(query);
     return result;
   }
-
-  public getUserList = async (queryParam : {code_01 : string, code_02 : string}) => {
-    let query : string = ``
-     
-    const result: any = await this.database.query(query);
-    return result;
-  };
 }

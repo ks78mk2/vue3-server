@@ -9,18 +9,8 @@ export default async (
   response: Response,
   next: NextFunction
 ) => {
-  const free = ["/users/signin", "/users/signout", "/users/email/exist", "/users/pass/init", "/users/check" , "/users/user", "/departments/codeone", "/departments/codetwo", "/commons/thumb", "/commons/sendmail", "/commons/download", "/commons/thumb/download", "/commons/app/download"];
-  free.push("/qnas/qna");
-  //excel test
-  free.push("/reports/excel");
-  //ios app-download 
-  free.push("/icons8-anonymous-mask-100.png");
-  free.push("/icons8-anonymous-mask-50.png");
-  free.push("/commons/uploadfile");
-  free.push("/commons/logo");
-  free.push("/reports/download/media");
-
-
+  const free = ["/users/signin"];
+  
   let url_parse = url.parse(request.url, true);
   let pathname = url_parse.pathname;
   let include = false;

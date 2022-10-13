@@ -20,10 +20,7 @@ router.get("/pass/init", function(request, response) { //패스워드 초기화
 });    
 router.get("/list", function(request, response) { //유저 리스트 불러오기
     InterfaceRouter.apiBinding(request, response, Controller, 'getUserList');
-});    
-router.get("/liveview/user", function(request, response) { //뷰어 실행 user 정보 가져오기
-    InterfaceRouter.apiBinding(request, response, Controller, 'getLiveviewUser');
-});    
+});     
 router.post("/user", function(request, response) { //계정생성
     InterfaceRouter.apiBinding(request, response, Controller, 'userInsertData');
 });

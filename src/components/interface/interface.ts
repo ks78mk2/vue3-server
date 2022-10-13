@@ -32,17 +32,6 @@ export interface getReportList{
     user_passfail : string | any,
     check_type : string | any
 }
-// export interface getReportList{
-//     start_date: string,
-//     end_date: string,
-//     code_id : string | any,
-//     cust_nm: string | any,
-//     student_num: string | any,
-//     code_01: string | any,
-//     code_02: string | any,
-//     offset: string,
-//     excel: string | any
-// }
 export interface getChannelList{
     ctl_nm: string | any,
     admin_id: string | any,

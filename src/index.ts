@@ -111,16 +111,6 @@ function nocache(req: Request, res: Response, next: any) {
 }
 //router components
 app.use("/api/v1/users", nocache, require("./components/users"));    // 로그인, 계정등록 등
-app.use("/api/v1/departments", nocache, require("./components/departments")); // 학교, 학과 등
-app.use("/api/v1/reports", nocache, require("./components/reports"));  // 이력 조회
-app.use("/api/v1/controls", nocache, require("./components/controls"));  // 채널(시험) 요청 및 수정 등
-app.use("/api/v1/onlines", nocache, require("./components/onlines"));  // 현황 리스트
-app.use("/api/v1/commons", nocache ,require("./components/commons"));  // 썸네일 등
-app.use("/api/v1/subscriptions", nocache ,require("./components/subscriptions"));  // 개통 관련
-app.use("/api/v1/qnas", nocache ,require("./components/qnas"));  // 문의
-app.use("/api/v1/pcview", nocache ,require("./components/pcview"));  // pcviewer 연동 api
-app.use("/api/v1/analyze", nocache ,require("./components/analyze"));  // 통합분석 api
-app.use("/api/v1/choice", nocache ,require("./components/choice"));  // viewer choice api
 
 
 

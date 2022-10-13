@@ -121,26 +121,6 @@ export default class Service extends InterfaceService {
     }
   };
 
-  public getUserList = async () => {
-    try {
-      //학교 리스트 가져오기
-      const db_result: any[] = await this.dataAccessLayer.getUserList(this.req_Params);
-      return { result : this.util.resultToLower(db_result) }
-    } catch (error) {
-      return { error } ;
-    }
-  };
-
-  public getLiveviewUser = async () => {
-    try {
-      //학교 리스트 가져오기
-      const db_result: any[] = await this.dataAccessLayer.signin(this.req_Params);
-      return { result : this.util.resultToLower(db_result) }
-    } catch (error) {
-      return { error } ;
-    }
-  };
-
   public signout = async () => {
     try {
       // return { result : this.util.resultToLower(db_result) }
